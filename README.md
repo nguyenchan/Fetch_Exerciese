@@ -24,7 +24,7 @@
 + List major Python/Node.js web frameworks, at least 3 for each of the languages
 
 |NodeJS              |       Python    |
-|--------------------------------------|
+|--------------------|-----------------|
 |Express.js          |       Django    |
 |Meteor.js           |       Pyramid   |
 |NEST.js             |       TurboGears|
