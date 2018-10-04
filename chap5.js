@@ -33,6 +33,15 @@ let group = arr.reduce((arr, n) => {
 
 // count number occurent of eachitem in array
 let dupArr = [1, 2, 3, 1, 2, 4, 2, 3];
+const freq = (a) => a.reduce((output, i) => {
+    if (!output[i]) {
+      output[i] = 1
+    } else {
+      output[i] += 1
+    }
+    return output
+  }, {})
+console.log("freq: ", freq(dupArr));
 
 // split array to odd and even array
 let evenArr = arr.filter((a) => a % 2 === 0),
