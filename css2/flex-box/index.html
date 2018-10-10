@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo"><div id="logo"></div></div>
+        <div class="header__nav">
+            <ul class="header__nav_items">
+                <li class="header__nav_item">Topic 1</li>
+                <li class="header__nav_item">Topic 2</li>
+                <li class="header__nav_item">Topic 3</li>
+                <li class="header__nav_item">Topic 4</li>
+            </ul>
+            <div class="header__nav_search">
+                <form class="search-form" action="">
+                    <input type="text" class="header__nav_search_input" placeholder="Search">
+                    <button type="submit" class="header__nav_search_submit">
+                        <span>🔎</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="top-banner">
+        <ul class="top-banner_sections">
+            <li class="top-banner_section">Section 1</li>
+            <li class="top-banner_section">Section 2</li>
+            <li class="top-banner_section">Section 3</li>
+            <li class="top-banner_section">Section 4</li>
+        </ul>
+    </div>
+    <main>
+        <div class="side-bar-left">
+            <ul class="side-bar-left__items">
+                <li class="side-bar-left__item">1</li>
+                <li class="side-bar-left__item">2</li>
+                <li class="side-bar-left__item">3</li>
+                <li class="side-bar-left__item">4</li>
+                <li class="side-bar-left__item">5</li>
+                <li class="side-bar-left__item">6</li>
+                <li class="side-bar-left__item">7</li>
+                <li class="side-bar-left__item">8</li>
+                <li class="side-bar-left__item">9</li>
+                <li class="side-bar-left__item">10</li>
+                <li class="side-bar-left__item">11</li>
+                <li class="side-bar-left__item">12</li>
+                <li class="side-bar-left__item">13</li>
+                <li class="side-bar-left__item">14</li>
+                <li class="side-bar-left__item">15</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="main-content_item1">
+                <div class="cross1"></div>
+                <div class="cross2"></div>
+            </div>
+            <div class="main-content_item2">
+                <div class="main-content_content">
+                        <p>Lorem ipsum dolor sit amet, vis sanctus suscipiantur an. Reque facer definiebas nam ut, quod verterem percipitur has ne. Inermis liberavisse sea te, has id prima disputando, quo congue timeam ne. Eum antiopam constituam te, at case dicant intellegam sea, nonumy pericula repudiandae no mea. Vim ullum conceptam omittantur no, at partiendo rationibus pri. Inani expetenda eu duo.</p>
+                        <p>At mucius aperiam inimicus nam. Has te nonumy aliquam, ne petentium inciderint sit, vis et quidam labitur accusamus. No mei vitae expetenda. Accusata quaerendum mei eu, graeco ancillae suscipit sea te, modus debet ponderum eam ea.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="side-bar-right">
+            <div class="side-bar-right_item1">
+                <div class="side-bar-right_feature">1</div>
+                <div class="side-bar-right_feature">2</div>
+                <div class="side-bar-right_feature">3</div>
+                <div class="side-bar-right_feature">4</div>
+                <div class="side-bar-right_feature">5</div>
+                <div class="side-bar-right_feature">6</div>
+            </div>
+            <div class="side-bar-right_item2"><a href="" style="text-decoration: none;" >External Links</a></div>
+        </div>
+    </main>
+</body>
+<script>
+        let flag = false;
+    
+        function titleX() {
+            let a = '☠☣☢🍎',
+                b = 'Hello!!!';
+            if(!flag) {
+                document.title = a;
+                flag = true;
+                console.log(flag);
+                return;
+            } else {
+                document.title = b;
+                flag = false;
+                console.log(flag);
+                return;
+            }
+        }
+    
+        setInterval(() => titleX(), 1000);
+    </script>
+</html>
