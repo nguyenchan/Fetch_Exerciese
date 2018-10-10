@@ -73,6 +73,7 @@ ul.header__nav_items {
     height: 1.7rem;
     width: 220px;
     border: 1px solid grey;
+    padding: 5px;
 }
 
 .header__nav_search_input::placeholder {
@@ -89,11 +90,6 @@ ul.header__nav_items {
     padding: 0;
     font-size: 1rem;
 }
-
-#search-icon {
-    transform: rotate(45deg);
-}
-
 
 
 .search-form {
@@ -216,12 +212,14 @@ ul.side-bar-left {
     border: 1px solid black;
     flex: 2;
     margin-bottom: .5rem;
+    padding: .5rem;
 }
 
 .side-bar-right_item2 {
     content: '';
     border: 1px solid black;
     flex: 1;
+    padding: 1rem;
 }
 
 .side-bar-right_item2 {
