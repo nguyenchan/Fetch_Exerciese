@@ -27,15 +27,17 @@
             </div>
         </div>
     </header>
-    <div class="top-banner">
-        <ul class="top-banner_sections">
-            <li class="top-banner_section">Section 1</li>
-            <li class="top-banner_section">Section 2</li>
-            <li class="top-banner_section">Section 3</li>
-            <li class="top-banner_section">Section 4</li>
-        </ul>
-    </div>
+    
     <main>
+        <div class="top-banner">
+            <ul class="top-banner_sections">
+                <li class="top-banner_section">Section 1</li>
+                <li class="top-banner_section">Section 2</li>
+                <li class="top-banner_section">Section 3</li>
+                <li class="top-banner_section">Section 4</li>
+            </ul>
+        </div>
+        <div class="wrapper">
         <div class="side-bar-left">
             <ul class="side-bar-left__items">
                 <li class="side-bar-left__item">1</li>
@@ -79,6 +81,7 @@
             </div>
             <div class="side-bar-right_item2"><a href="" style="text-decoration: none;" >External Links</a></div>
         </div>
+    </div>
     </main>
 </body>
 <script>
@@ -86,7 +89,7 @@
     
         function titleX() {
             let a = 'Hello! ☠☣☢🍎',
-                b = 'CSS flex-box';
+                b = 'CSS grid';
             if(!flag) {
                 document.title = a;
                 flag = true;
