@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Daily_report</title>
+  </head>
+  <body>
+    <main>
+      <h2 class="title">
+        Daily report <br />
+        Time left: <span id="maintimer">counting...</span>
+      </h2>
+      <div class="form_wrapper">
+        <p>Deadline 23h59'</p>
+        <form
+          id="text-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfyy5EfxKFP-T3Vexd45NDS0FTEzkRC3BWVW1622VS8u_sf8Q/formResponse"
+          target="_self"
+          method="POST"
+        >
+          <div class="rowtab">
+            <div class="label">
+              <label id="name-label" for="entry.307911978">* Your Name: </label>
+            </div>
+            <div class="righttab">
+              <input
+                type="text"
+                name="entry.307911978"
+                id="name"
+                class="input-field"
+                placeholder="your name..."
+                value="autofill"
+                required
+              />
+            </div>
+          </div>
+          <div class="rowttab">
+            <div class="label">
+              <label id="date-label" for="entry.277865941">* Date: </label>
+            </div>
+            <div class="righttab">
+              <input
+                type="date"
+                name="entry.277865941"
+                id="date"
+                class="input-field"
+                required
+              />
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="label">
+              <label id="done-label" for="entry.328034477"
+                >* Your report:
+              </label>
+            </div>
+            <div class="righttab">
+              <textarea
+                id="done"
+                name="entry.328034477"
+                class="input-field"
+                placeholder="your report..."
+                row="4"
+                type="text"
+                required
+              >#Done: </textarea>
+            </div>
+          </div>
+          <div class="rowtab">
+            <div class="label">
+              <label id="need_to_do-label" for="entry.1631023611"
+                >* Need_to_do:
+              </label>
+            </div>
+            <div class="righttab">
+              <textarea
+                id="need_to_do"
+                name="entry.1631023611"
+                class="input-field"
+                placeholder="your answer..."
+                row="4"
+                type="text"
+                required
+              >#Need_to_do: </textarea>
+            </div>
+          </div>
+          <!-- ... -->
+          <button id="postform" type="submit">Submit!</button>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      let date_input = document.querySelector("#date");
+      let name_input = document.querySelector("#name");
+      let done_input = document.querySelector("#done");
+      let need_to_do_input = document.querySelector("#need_to_do");
+
+      let today = new Date();
+      //   let  mm = today.getMonth() + 1,
+      //     dd = today.getDate(),
+      //     yyyy = today.getFullYear();
+      //   const _today =
+      //     (mm < 10 ? "0" + mm : mm) +
+      //     "/" +
+      //     (dd < 10 ? "0" + dd : dd) +
+      //     "/" +
+      //     yyyy;
+      //   date_input.setAttribute("value", _today);
+      date_input.valueAsDate = today;
+
+      name_input.value = "your_name_go_here";
+      done_input.value = "#Done: \n-task1...\n-task2...";
+      need_to_do_input.value = "#Need_to_do: \n-task3...\n-task4...";
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
